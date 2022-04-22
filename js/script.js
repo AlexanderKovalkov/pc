@@ -8,6 +8,9 @@ contents.forEach((item) => {
 //    } 
 
     title.addEventListener('click', () => {
+
+        let actives = document.querySelectorAll('.program-line__descr.active');
+        actives.forEach((act) => act.classList.remove('active'));
         item.querySelector('.program-line__descr').classList.toggle('active');
 
     })
